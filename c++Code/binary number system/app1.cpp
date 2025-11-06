@@ -1,3 +1,4 @@
+//Decimal to binaty
 #include<iostream>
 using namespace std;
 int main(){
@@ -11,8 +12,8 @@ int main(){
 
         ans += (rem*pow);
         pow = pow*10;
-        cout<<ans<<endl;
     }
+     cout<<ans<<endl;
     
 }
   
