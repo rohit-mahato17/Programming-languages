@@ -14,5 +14,6 @@ int main(){
     cout<<"long long:"<< ll <<endl;
     cout<<"signed int:"<< si <<endl;
     cout<<"unsigned int:"<< ui <<endl;
-    
+      
+    return 0;
 }
