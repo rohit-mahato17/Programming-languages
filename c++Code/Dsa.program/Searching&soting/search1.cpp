@@ -11,7 +11,7 @@ bool linearsearch(int arr[],int size,int target){
 }
 int main(){
     int arr[]={60,50,40,30,20,100};
-    int size=sizeof(arr)/sizeof(int);
+    int size=sizeof(arr)/sizeof(arr[0]);
     int target;
     cout<<"Enter your value of target:";
     cin>>target;
