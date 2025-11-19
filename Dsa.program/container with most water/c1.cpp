@@ -1,6 +1,6 @@
 //container with most water(o(n2))Timr complaxity
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
 // int maxArea(vector<int> height){
 //        int maxWater=0;
@@ -17,25 +17,50 @@ using namespace std;
 // }
 
 //container with most water(o(n))
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int maxArea(vector<int> height){
+//        int maxWater=0;
+//        int lp=0, rp=height.size()-1;
+
+//        while(lp < rp){
+//         int w = rp-lp;
+//         int ht = min(height[lp],height[rp]);
+//         int currwater = w * ht;
+//         maxWater = max(maxWater,currwater);
+
+//         height[lp] < height[rp] ? lp++: rp--;
+
+//        }
+//        return maxWater;
+
+// }
+
+// int main(){
+//     vector<int> height={1,8,6,2,5,4,8,3,7};
+//     cout<<maxArea (height);
+// }
+
+#include<bits/stdc++.h>
+using namespace std;
 
 int maxArea(vector<int> height){
-       int maxWater=0;
-       int lp=0, rp=height.size()-1;
+   int maxWater = 0;
+    int lp=0,rp=height.size()-1;
 
-       while(lp < rp){
-        int w = rp-lp;
-        int ht = min(height[lp],height[rp]);
-        int currwater = w * ht;
+    while(lp < rp){
+        int w= rp-lp;
+        int ht= min(height[lp],height[rp]);
+        int currwater= w*ht;
         maxWater = max(maxWater,currwater);
-
+         
         height[lp] < height[rp] ? lp++: rp--;
-
-       }
-       return maxWater;
-
+    }
+    return maxWater;
 }
 
 int main(){
-    vector<int> height={1,8,6,2,5,4,8,3,7};
-    cout<<maxArea (height);
+   vector<int> height={1,8,6,2,5,4,8,3,7};
+   cout<<maxArea(height);
 }
