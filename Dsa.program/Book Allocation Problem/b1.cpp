@@ -1,3 +1,4 @@
+//O(LogN * n) 
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -52,5 +53,3 @@ int main(){
 
  cout<< allocateBooks(arr,n,m)<<endl;
 }
-
-//O(LogN * n)
