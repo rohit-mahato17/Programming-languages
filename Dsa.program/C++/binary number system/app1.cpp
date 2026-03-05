@@ -5,7 +5,7 @@ int main(){
     int decimalnumber=10;
     int ans=0;
     int pow=1;
-    
+     
     while(decimalnumber > 0){
         int rem= decimalnumber%2;
         decimalnumber= decimalnumber / 2;
